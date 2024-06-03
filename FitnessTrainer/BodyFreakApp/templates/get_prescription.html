@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Prescription</title>
+    <link rel="stylesheet" type="text/css" href="styles_1_get_pres.css">
+
+</head>
+<body>
+    <h1>Available Subscriptions:</h1>
+    <form action="/" method="POST">
+        <label for="subscription">Choose a subscription:</label>
+        <select name="subscription" id="subscription">
+            <option value="subscription1">Subscription 1 - 30 days, $100</option>
+            <option value="subscription2">Subscription 2 - 60 days, $180</option>
+            <option value="subscription3">Subscription 3 - 90 days, $250</option>
+        </select>
+        <button type="submit">Purchase</button>
+    </form>
+
+    <div id="subscriptionDetails" style="margin-top: 20px;">
+        <h2>Subscription Details:</h2>
+        <div id="subscription1Details" style="display: none;">
+            <h3>Subscription 1</h3>
+            <p>Duration: 30 days</p>
+            <p>Price: $100</p>
+            <p>Includes access to beginner-level exercises, suitable for those new to fitness.</p>
+        </div>
+        <div id="subscription2Details" style="display: none;">
+            <h3>Subscription 2</h3>
+            <p>Duration: 60 days</p>
+            <p>Price: $180</p>
+            <p>Includes access to intermediate-level exercises, suitable for those with some experience in fitness.</p>
+        </div>
+        <div id="subscription3Details" style="display: none;">
+            <h3>Subscription 3</h3>
+            <p>Duration: 90 days</p>
+            <p>Price: $250</p>
+            <p>Includes access to advanced-level exercises, suitable for experienced individuals looking for challenging workouts.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("subscription").addEventListener("change", function() {
+            var subscription = this.value;
+            document.getElementById("subscriptionDetails").querySelectorAll("div").forEach(function(element) {
+                if (element.id === subscription + "Details") {
+                    element.style.display = "block";
+                } else {
+                    eleament.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

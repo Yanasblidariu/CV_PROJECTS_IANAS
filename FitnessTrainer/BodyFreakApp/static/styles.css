@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/546/363/desktop-wallpaper-gym-no-pain-no-gain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #ffab40, #ffc107);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px; /* Adjusted padding */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: whitesmoke; /* Dark color for brand */
+}
+
+.navbar-brand:hover {
+    color: #ff6f00; /* Orange color on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #343a40; /* Dark color for nav links */
+    font-size: 1rem;
+    margin: 0 10px; /* Adjusted margin */
+    padding: 10px 15px; /* Adjusted padding */
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f00; /* Orange color on hover */
+}
+
+/* Let's start and Get Prescription Buttons */
+.start-button, .prescription-button {
+    background-color: turquoise;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjusted padding */
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Adjusted margin */
+}
+
+.start-button:hover, .prescription-button:hover {
+    background-color: turquoise; /* Lighter orange color on hover */
+}
+
+/* Prescription Button */
+.prescription-button {
+    background-color: turquoise; /* Dark background color */
+    color: #971111;
+}
+
+.prescription-button:hover {
+    background-color:white; /* Orange color on hover */
+}
+
+/* Start Button */
+.start-button {
+    background-color: turquoise; /* Orange color */
+}
+
+.start-button:hover {
+    background-color: white; /* Lighter orange color on hover */
+}
+
